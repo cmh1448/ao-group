@@ -1,0 +1,24 @@
+spring:
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:mariadb://mariadb-db-1:3306/ao
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+
+  # jpa설정
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties: # property 사용 설정
+      hibernate: # hibernate property 설정
+        dialect: org.hibernate.dialect.MariaDBDialect
+        show_sql: false
+        format_sql: true
+        highlight_sql: true
+    show-sql: true
+server:
+  port: 13780

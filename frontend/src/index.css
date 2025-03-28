@@ -1,0 +1,25 @@
+@import url("./assets/transitions.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.font-suit {
+  font-family: "SUIT Variable", sans-serif;
+}
+
+* {
+  font-family: "PretendardVariable", sans-serif;
+}
